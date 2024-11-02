@@ -4,10 +4,10 @@ function insert_Row() {
     let table = document.querySelector("#sampleTable"); // Use querySelector for single element
 
     // Add a new row with `insertAdjacentHTML`
-    table.insertAdjacentHTML('beforeend', `
+    table.insertAdjacentHTML('afterbegin', `
         <tr>
-            <td>Row${count} cell1</td>
-            <td>Row${count} cell2</td>
+            <td>New Cell1</td>
+            <td>New Cell2</td>
         </tr>
     `);
 
