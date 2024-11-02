@@ -1,16 +1,12 @@
-let count = 3; // Initialize count to keep track of row numbers
-
 function insert_Row() {
-    let table = document.querySelector("#sampleTable"); // Use querySelector for single element
+    let table = document.querySelector("#sampleTable"); // Select the table
 
-    // Add a new row with `insertAdjacentHTML`
+    // Insert a new row with specific cell text at the top
     table.insertAdjacentHTML('afterbegin', `
         <tr>
             <td>New Cell1</td>
             <td>New Cell2</td>
         </tr>
     `);
-
-    count++; // Increment count for the next row
 }
 
